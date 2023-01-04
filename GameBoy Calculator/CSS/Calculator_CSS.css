@@ -1,0 +1,111 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+.gameboytext {
+    color: #fff;
+    font-size: 7ch;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 70%;
+}
+
+body {
+    background-color: black;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.screen-box {
+    position: absolute;
+    width: 390px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(89,86,93,255);
+    top: 30%;
+    left: 50%;
+    z-index: 100;
+}
+
+.calculator-screen {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    font-size: 5rem;
+    background-color: rgba(57,65,6,255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 100;
+}
+
+.calculator {
+    padding-top: 300px;
+    background-color: rgba(195,191,190,255);
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid darkslategray;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.06));
+    text-shadow: 0 1px rgba(255,255,255,.4);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255, 255, 255, .05), inset 0 -1px 0 0 rgba(255,255,255,.05),
+    0 1px 0 0 rgba(255,255,255,.05);
+}
+
+button:hover {
+    background-color: #e1e1e1;
+}
+
+.operator {
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.5));
+    background-color: lightgray;
+}
+
+.all-clear {
+    background-color: rgb(0, 0, 0);
+    border-color: darkslategray;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: darkred;
+}
+
+.equal-sign {
+    background-color: rgba(147,13,70,255);
+    border-color: darkslategray;
+    color: #fff;
+    height: 100%;
+    grid-area: 6/4/4/5;
+}
+
+.equal-sign:hover {
+    background-color: rgb(139, 0, 56);
+}
+
+.calculator-keys {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
